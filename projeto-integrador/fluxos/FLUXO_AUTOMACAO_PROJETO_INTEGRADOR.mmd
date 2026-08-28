@@ -1,0 +1,20 @@
+flowchart TD
+    A[Projeto Integrador] --> B[Biblioteca compartilhada]
+    B --> C[Habilidade pedagógica]
+    C --> D[Tarefa agendada ou solicitação do professor]
+    D --> E[Consultar fontes curriculares]
+    E --> F[Gerar plano e material de apoio]
+    F --> G[Gerar instrumento avaliativo]
+    G --> H{Produto e evidência completos?}
+    H -- Não --> I[Feedback e revisão]
+    I --> F
+    H -- Sim --> J[Registrar portfólio]
+    J --> K[Versionar no GitHub]
+    J --> L[Armazenar no Google Drive]
+    J --> M[Atualizar acompanhamento interno]
+    K --> N[Revisão final do professor]
+    L --> N
+    M --> N
+    N --> O{Aprovação docente?}
+    O -- Não --> I
+    O -- Sim --> P[Material liberado para uso pedagógico]
